@@ -11,6 +11,7 @@
 
 서버:
  1. 유저의 ID, 비밀번호 등을 저장
+ 1.2 유저의 비밀번호는 sha3-256 암호화로 해쉬해서 저장(보안)
  2. 유저의 현재 자산 현황, 유저 거래 로그 기록
  3. 주식 장마감, 열리는 시간 확인
  4. socket 통신을 바탕으로한 실시간 채팅
@@ -27,8 +28,8 @@
  6. 매수, 매도 로그 시각화
  
 필요 기술:
- [Google](https://yurimkoo.github.io/python/2019/09/14/connect-db-with-python.html "pyMySQL")
- [Google](https://docs.python.org/ko/3/library/socket.html "socket 통신")
- [Google](https://gosmcom.tistory.com/130 "request API모듈")
- [Google](https://docs.python.org/ko/3/library/tkinter.html "tkinter GUI 모듈")
- [Google](https://wikidocs.net/92071 "차트 그리기 모듈")
+ [pymysql](https://yurimkoo.github.io/python/2019/09/14/connect-db-with-python.html "pyMySQL")
+ [socket](https://docs.python.org/ko/3/library/socket.html "socket 통신")
+ [API request](https://gosmcom.tistory.com/130 "request API모듈")
+ [tkinter GUI](https://docs.python.org/ko/3/library/tkinter.html "tkinter GUI 모듈")
+ [matpoltlib](https://wikidocs.net/92071 "차트 그리기 모듈")
